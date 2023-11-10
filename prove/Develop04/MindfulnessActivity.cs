@@ -3,7 +3,7 @@ using System.Threading;
 
 public abstract class MindfulnessActivity
 {
-    private int duration;
+    protected int duration;
     private string description;
     protected string[] prompts;
     protected string[] reflectionQuestions;
@@ -40,15 +40,49 @@ public abstract class MindfulnessActivity
         Console.WriteLine($"-- {description} --");
         Console.WriteLine($"Duration: {duration} seconds");
         Console.WriteLine("Prepare to begin...");
-        Thread.Sleep(3000); // Pause for 3 seconds
+        Spinner(3); // Pause for 3 seconds
     }
 
     public void EndActivity()
     {
         Console.WriteLine("Good job!");
         Console.WriteLine($"You have completed the {description} activity for {duration} seconds.");
-        Thread.Sleep(3000); // Pause for 3 seconds
+        Spinner(3); // Pause for 3 seconds
     }
 
     public abstract void PerformActivity();
+
+    protected void CountDown(int seconds) 
+    {
+        while (seconds > 0)
+        {
+            Console.Write(seconds); // display time left in seconds
+            Thread.Sleep(1000);      // wait...
+            Console.Write("\b \b"); // remove previous character
+            seconds --;             // time has passed so decrement seconds
+        }
+    }
+
+    protected void Spinner(int seconds)
+    {
+        while (seconds > 0) {
+            Console.Write("-");     // Display first part of the animation
+            Thread.Sleep(245);      // wait for 1/4 of a second
+            Console.Write("\b \b"); // Remove previous character
+
+            Console.Write("\\");
+            Thread.Sleep(245);
+            Console.Write("\b \b");
+
+            Console.Write("|");
+            Thread.Sleep(245);
+            Console.Write("\b \b");
+
+            Console.Write("/");
+            Thread.Sleep(245);
+            Console.Write("\b \b");
+
+            seconds --;         // one second has passed
+        }
+    }
 }
