@@ -4,8 +4,10 @@ class Program
 {
     static void Main()
     {
-        while (true)
+        int choice = 0;
+        while (choice != 4)
         {
+            Console.Clear();
             Console.WriteLine("Hello! Welcome To The Mindfulness Activity! Please Choose An Option From The Menu:");
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflection Activity");
@@ -13,11 +15,11 @@ class Program
             Console.WriteLine("4. Exit");
             Console.Write("Select an activity (1-4): ");
 
-            if (int.TryParse(Console.ReadLine(), out int choice))
+            if (int.TryParse(Console.ReadLine(), out choice))
             {
                 if (choice == 4)
                     break;
-                Console.Write("Enter the duration in seconds: ");
+                Console.Write("How long would you like this activity to be?: ");
                 if (int.TryParse(Console.ReadLine(), out int duration) && duration > 0)
                 {
                     MindfulnessActivity activity = null;
