@@ -1,3 +1,16 @@
-To do
-* Learning Activity - Version Control
-* Fix Develop 02 Journal project to save and load files properly
+
+Institute of Electrical and Electronics Engineers (IEEE):
+
+The Institute of Electrical and Electronics Engineers (IEEE) stands as a global professional association headquartered in Piscataway, New Jersey, USA. Established in 1963, though its roots trace back to the American Institute of Electrical Engineers founded in 1884, IEEE is dedicated to advancing technology for the benefit of humanity. IEEE encompasses various fields, including electrical engineering and computer science, providing professionals with a collaborative platform to share knowledge and stay abreast of technological advancements. IEEE offers different membership types with varying annual fees, aiming to foster a community that drives innovation in technology.
+
+Association for Computing Machinery (ACM):
+
+The Association for Computing Machinery (ACM) is a prominent global computing society headquartered in New York City, New York, USA. Founded in 1947, ACM serves as a comprehensive resource for professionals and researchers in computer science and engineering. Covering a broad spectrum of computing topics, including computer engineering, ACM provides valuable resources, publications, and events to facilitate collaboration and knowledge sharing. With membership fees that vary based on type and location, ACM aims to promote the advancement of computing as a science and profession.
+
+Semiconductor Industry Association (SIA):
+
+The Semiconductor Industry Association (SIA) operates as a trade association with its headquarters in Washington, D.C., USA. Established in 1977, SIA plays a crucial role in representing the semiconductor industry, addressing both policy and technical issues related to semiconductor manufacturing and design. The association advocates for policies that foster innovation and competitiveness within the semiconductor industry. Membership fees for SIA may vary based on membership type and company size, providing a platform for industry professionals to collaborate and drive advancements in semiconductor technology.
+
+
+
+
