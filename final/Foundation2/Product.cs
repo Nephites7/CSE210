@@ -1,23 +1,21 @@
-public class Product
+class Product
 {
     private string name;
-    private int productId;
-    private double price;
-    private int quantity;
+    private decimal price;
 
-    public Product(string name, int productId, double price, int quantity)
+    public Product(string name, decimal price)
     {
         this.name = name;
-        this.productId = productId;
         this.price = price;
-        this.quantity = quantity;
     }
 
-    public double CalculatePrice()
+    public string GetName()
     {
-        return price * quantity;
+        return name;
     }
 
-    // Getters and setters can be added if needed
-    // Omitted for brevity
+    public decimal GetPrice()
+    {
+        return price;
+    }
 }
