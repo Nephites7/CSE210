@@ -1,12 +1,16 @@
-class Product
+public class Product
 {
     private string name;
-    private decimal price;
+    private int productId; // Add productId
+    private double price; // Change decimal to double
+    private int quantity; // Add quantity
 
-    public Product(string name, decimal price)
+    public Product(string name, int productId, double price, int quantity)
     {
         this.name = name;
+        this.productId = productId;
         this.price = price;
+        this.quantity = quantity;
     }
 
     public string GetName()
@@ -14,8 +18,13 @@ class Product
         return name;
     }
 
-    public decimal GetPrice()
+    public int GetProductId()
     {
-        return price;
+        return productId;
+    }
+
+    public double CalculatePrice()
+    {
+        return price * quantity;
     }
 }

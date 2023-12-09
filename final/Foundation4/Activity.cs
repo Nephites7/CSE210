@@ -3,7 +3,7 @@ using System;
 class Activity
 {
     private DateTime date;
-    private int durationMinutes;
+    public int durationMinutes;
 
     public Activity(DateTime date, int durationMinutes)
     {

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -21,7 +20,7 @@ public class Order
 
     public string GetPackingLabel()
     {
-        return $"Packing Label:\n{string.Join("\n", products.Select(product => $"{product.Name} - ID: {product.ProductId}"))}";
+        return $"Packing Label:\n{string.Join("\n", products.Select(product => $"{product.GetName()} - ID: {product.GetProductId()}"))}";
     }
 
     public string GetShippingLabel()

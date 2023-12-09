@@ -22,7 +22,4 @@ public class Address
     {
         return $"{streetAddress}\n{city}, {stateProvince}\n{country}";
     }
-
-    // Getters and setters can be added if needed
-    // Omitted for brevity
 }

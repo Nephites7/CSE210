@@ -16,6 +16,8 @@ public class Customer
 
     public string Name => name;
 
-    // Getters and setters can be added if needed
-    // Omitted for brevity
+    public string GetAddressString()
+    {
+        return address.GetAddressString();
+    }
 }

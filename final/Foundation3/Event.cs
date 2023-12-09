@@ -5,10 +5,10 @@ class Event
     private string eventName;
     private string eventDescription;
     private DateTime eventDate;
-    private DateTime eventTime;
+    private TimeSpan eventTime; // Change DateTime to TimeSpan
     private EventAddress eventAddress;
 
-    public Event(string name, string description, DateTime date, DateTime time, EventAddress address)
+    public Event(string name, string description, DateTime date, TimeSpan time, EventAddress address)
     {
         eventName = name;
         eventDescription = description;
@@ -19,7 +19,7 @@ class Event
 
     public string GetBasicDetails()
     {
-        return $"Event: {eventName}\nDescription: {eventDescription}\nDate: {eventDate.ToShortDateString()}\nTime: {eventTime.ToShortTimeString()}\nAddress: {eventAddress.GetFullAddress()}";
+        return $"Event: {eventName}\nDescription: {eventDescription}\nDate: {eventDate.ToShortDateString()}\nTime: {eventTime.ToString(@"hh\:mm")}\nAddress: {eventAddress.GetFullAddress()}";
     }
 
     public virtual string GetFullDetails()
